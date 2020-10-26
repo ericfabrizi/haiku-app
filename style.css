@@ -1,0 +1,73 @@
+/* haiku app stylesheet */
+
+@font-face {
+    font-family: Open-Sans;
+    src: url(OpenSans-Regular.ttf);
+}
+
+.body {
+    margin: 0px;
+    font-family: Open-Sans;
+    background-color: whitesmoke;
+    animation-name: fade-in;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade-in {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.content {
+    min-height: calc(100vh - 80px);
+}
+
+.title {
+    font-size: 30px;
+    text-align: center;
+}
+
+.hello {
+    font-size: 20px;
+    text-align: center;
+    color: whitesmoke;
+    background-color: rgb(145, 145, 145);
+    margin: 0px 100px 0px 100px ;
+    padding: 8px 0px 10px 0px;
+}
+
+.haiku {
+    margin: 35px 0px 20px 250px;
+    padding: 25px 25px 25px 25px;
+    background-color: rgba(146, 215, 255, 0.925);
+}
+
+.lotus {
+    margin: 50px 350px 0px 0px;
+    padding: 30px 0px 30px 0px;
+    background-color: #fbb8c2;
+    border-radius: 0% 100px 100px 0px;
+}
+
+.info {
+    margin: 0px 0px 0px 50px;
+}
+
+.footer {
+    height: 50px;
+    background-color: rgb(2, 165, 2);
+    padding-top: 20px;
+}
+
+.footer-link {
+    margin-left: 50px;
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}
+
+
+
