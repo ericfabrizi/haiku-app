@@ -1,36 +1,3 @@
-// haikus
-
-let pondLine1 = "An old silent pond...";
-let pondLine2 = "A frog jumps into the pond,";
-let pondLine3 = "splash! Silence again.";
-let pondAuthor = "Matsuo Basho";
-let pondLife = "(1644-1694)";
-
-let rainLine1 = "In the twilight rain";
-let rainLine2 = "these brilliant-hued hibiscus -";
-let rainLine3 = "A lovely sunset.";
-let rainAuthor = "Matsuo Basho";
-let rainLife = "(1644-1694)";
-
-let sandalsLine1 = "A summer river being crossed";
-let sandalsLine2 = "how pleasing";
-let sandalsLine3 = "with sandals in my hands!";
-let sandalsAuthor = "Yosa Buson";
-let sandalsLife = "(1716-1784)";
-
-let moonlightLine1 = "In the moonlight,";
-let moonlightLine2 = "The color and scent of the wisteria";
-let moonlightLine3 = "Seems far away.";
-let moonlightAuthor = "Yosa Buson";
-let moonlightLife = "(1716-1784)";
-
-let snailLine1 = "O snail";
-let snailLine2 = "Climb Mount Fuji,";
-let snailLine3 = "But slowly, slowly!";
-let snailAuthor = "Kobayashi Issa";
-let snailLife = "(1763-1828)";
-
-
 // pick a haiku
 
 let line1;
@@ -41,39 +8,39 @@ let life;
 
 switch (Math.floor(Math.random() * 5)) {
     case 0:
-        line1 = pondLine1;
-        line2 = pondLine2;
-        line3 = pondLine3;
-        author = pondAuthor;
-        life = pondLife;
+        line1 = "An old silent pond...";
+        line2 = "A frog jumps into the pond,";
+        line3 = "splash! Silence again.";
+        author = "Matsuo Basho";
+        life = "(1644-1694)";
         break;
     case 1:
-        line1 = rainLine1;
-        line2 = rainLine2;
-        line3 = rainLine3;
-        author = rainAuthor;
-        life = rainLife;
+        line1 = "In the twilight rain";
+        line2 = "these brilliant-hued hibiscus -";
+        line3 = "A lovely sunset.";
+        author = "Matsuo Basho";
+        life = "(1644-1694)";
         break;
     case 2:
-        line1 = sandalsLine1;
-        line2 = sandalsLine2;
-        line3 = sandalsLine3;
-        author = sandalsAuthor;
-        life = sandalsLife;
+        line1 = "A summer river being crossed";
+        line2 = "how pleasing";
+        line3 = "with sandals in my hands!";
+        author = "Yosa Buson";
+        life = "(1716-1784)";
         break;
     case 3:
-        line1 = moonlightLine1;
-        line2 = moonlightLine2;
-        line3 = moonlightLine3;
-        author = moonlightAuthor;
-        life = moonlightLife;
+        line1 = "In the moonlight,";
+        line2 = "The colour and scent of the wisteria";
+        line3 = "Seems far away.";
+        author = "Yosa Buson";
+        life = "(1716-1784)";
         break;
     case 4:
-        line1 = snailLine1;
-        line2 = snailLine2;
-        line3 = snailLine3;
-        author = snailAuthor;
-        life = snailLife;
+        line1 = "O snail";
+        line2 = "Climb Mount Fuji,";
+        line3 = "But slowly, slowly!";
+        author = "Kobayashi Issa";
+        life = "(1763-1828)";
 }
 
 

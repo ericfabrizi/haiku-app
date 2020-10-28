@@ -1,67 +1,27 @@
-// what hour of the day is it
+// what date is it
 
 let date = new Date();
 
-let time = date.getHours();
+// pick a random value from an array
 
-
-// randomise morning greeting
-
-let decideMorning = Math.floor(Math.random() * 3);
-
-if (decideMorning === 0) {
-    morning = "Good morning";
+function randomise(possible_greetings) {
+    return possible_greetings[Math.floor(Math.random() * possible_greetings.length)];
 }
-else if (decideMorning === 1) {
-    morning = "Have a good morning";
-}
-else {
-    morning = "Welcome in the day";
-}
-
-
-// randomise afternoon greeting
-
-let decideAfternoon = Math.floor(Math.random() * 3);
-
-if (decideAfternoon === 0) {
-    afternoon = "Good afternoon";
-}
-else if (decideAfternoon === 1) {
-    afternoon = "Enjoy your afternoon";
-}
-else {
-    afternoon = "Good day";
-}
-
-
-// randomise evening greeting
-
-let decideEvening = Math.floor(Math.random() * 3);
-
-if (decideEvening === 0) {
-    evening = "Good evening";
-}
-else if (decideEvening === 1) {
-    evening = "Have a good evening";
-}
-else {
-    evening = "Have a lovely evening";
-}
-
 
 // choose appropriate greeting for time of day
 
-if (time < 12) {
-    greeting = morning;
+if (date.getHours() < 12) {
+    let morning = ["Good morning", "Have a good morning", "Have a lovely morning"];
+    var greeting = randomise(morning);
 }
-else if (time < 17) {
-    greeting = afternoon;
+else if (date.getHours() < 17) {
+    let afternoon = ["Good afternoon", "Enjoy your afternoon", "Good day"];
+    var greeting = randomise(afternoon);
 }
 else {
-    greeting = evening;
+    let evening = ["Good evening", "Have a good evening", "Have a lovely evening"];
+    var greeting = randomise(evening);
 }
-
 
 // display greeting
 
