@@ -12,6 +12,16 @@
         <title>Lotus</title>
         <link rel="stylesheet" type="text/css" href="style.css">
         <link rel="icon" href="lotus.svg">
+
+        <script>
+            document.documentElement.classList.add("waitForLoad");
+
+            window.addEventListener("load", playAnimation, false);
+
+            function playAnimation() {
+                document.documentElement.classList.remove("waitForLoad");
+            }
+        </script>
     </head>
 
 <body class="body">
